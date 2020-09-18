@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HomeWork</title>
+        <link rel="shortcut icon" href="img/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>
+        <div class="loader">
+            <img src="img/load.gif" />
+        </div>
+
+        <section>
+            <div class="navbar">
+                <div class="topic">
+                    <a href="index.html"
+                        ><h1>Learn<span class="english">ify</span></h1></a
+                    >
+                </div>
+                <div class="curr">
+                    <p>English / Assignment</p>
+                </div>
+            </div>
+
+            <div class="container-index">
+                <div class="content-index">
+                    <div class="inst">
+                        <h2 draggable="true">
+                            Coming
+                            <span class="dat">Soon</span>
+                        </h2>
+                    </div>
+
+                    <div class="homework-q">
+                        <!-- <h2 draggable="true">
+                            Examination Deadline
+                            <span class="dat">5th Sep</span>
+                        </h2> -->
+                        <br />
+                        <p id="demo"></p>
+                        <!-- <br />
+                        <br />
+                        <h1 class="lavda">
+                            Score above 70% in Final Exam to get a CERTIFICATE !
+                        </h1> -->
+                      <!--   <h1 class="ten1">
+                            FINAL EXAM ( TENSE ) &nbsp; --------->
+                       <!--  </h1> -->
+<!--  --> 
+                       <!--  <a
+                            href="#"
+                            target="_blank"
+                            ><button class="tense">FINAL EXAM</button></a
+                        > -->
+                    </div>
+
+                    <!-- <div class="confirm">
+                <button>
+                    <address>
+                    <a href="mailto:mondalsneha51098@gmail.com?subject=Assignment Submitted&body=I had submitted my Assignment "> -
+                    </a>
+                </address>
+                </button>
+            </div> -->
+
+                    <div class="homework-btn">
+                        <!-- <button class="homework-back1">Instruction</button>
+                        &nbsp; &nbsp;
+                        <a href="#" target="_blank"
+                            ><button class="homework-back">
+                                Submit ANSWER
+                            </button></a
+                        >
+                        &nbsp; &nbsp;
+                        <address>
+                            <a
+                                href="mailto:mondalsneha51098@gmail.com?subject=Assignment Submitted&body=I had submitted my Assignment "
+                                ><button class="homework-back2">
+                                    CONFIRM SUBMIT
+                                </button>
+                            </a>
+                        </address> -->
+                        &nbsp; &nbsp;
+                        <a href="index.html"
+                            ><button class="homework-back3">
+                                Go back to Home
+                            </button></a
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal-parent">
+            <div class="modal">
+                <p>
+                    COMING SOON
+                    <span class="red"></span>
+                </p>
+                <span class="X" draggable="true">&times;</span>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="pablu.js"></script>
+
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Sep 14, 2020 23:59:59").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function () {
+                // Get today's date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor(
+                    (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+                );
+                var minutes = Math.floor(
+                    (distance % (1000 * 60 * 60)) / (1000 * 60)
+                );
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Output the result in an element with id="demo"
+                document.getElementById("demo").innerHTML =
+                    days +
+                    "d " +
+                    hours +
+                    "h " +
+                    minutes +
+                    "m " +
+                    seconds +
+                    "s ";
+
+                // If the count down is over, write some text
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML =
+                        "DEADLINE EXPIRED";
+                }
+            }, 1000);
+        </script>
+    </body>
+</html>
